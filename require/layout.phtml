@@ -1,0 +1,25 @@
+<?php 
+$mainContentFile = "home.phtml";
+if ($route === "about") {
+    $mainContentFile = "about.phtml";
+} elseif ($route === "contact") {
+    $mainContentFile = "contact.phtml";
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Exercice require</title>
+        <link rel="stylesheet" href="assets/style.css" />
+    </head>
+    <body>
+        <?php require "header.phtml"; ?>
+        
+        <?php require $mainContentFile; ?>
+        
+        <?php require "footer.phtml"; ?>
+    </body>
+</html>

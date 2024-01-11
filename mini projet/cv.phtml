@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cv.css" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    <?php echo $cvColor ?>
+        <h1><?php echo $firstName . ' ' . $lastName; ?></h1>
+        <h2>Développeur Web</h2>
+    </header>
+    <main>
+        <section>
+           <h2>Informations</h2>
+           <article>
+               <h3>Contact</h3>
+                   <h4>Email</h4>
+                       <p><?php echo $email ?></p>
+                   <h4>Téléphone</h4>
+                       <p><?php echo $phone ?></p>
+                   <h4>Linkedin</h4>
+                       <p><?php echo $linkedin ?></p>
+                   <h4>GitHub</h4>
+                       <p><?php echo $github ?></p>
+           </article>
+           <article>
+               <h3>Biographie</h3>
+                   <p><?php echo $bio ?></p>
+           </article>
+           <article>
+               <h3>Loisirs</h3>
+               <ul>
+                   <?php echo $loisir1 ?>
+                   <?php echo $loisir2 ?>
+                   <?php echo $loisir3 ?>
+                   <?php echo $loisir4 ?>
+               </ul>
+           </article>
+        </section>
+        <section>
+           <h2>Compétences</h2>
+           <article>
+               <h3>Langages de programmation</h3>
+                   <ul>
+                       <?php echo $html ?>
+                       <?php echo $css ?>
+                       <?php echo $js ?>
+                       <?php echo $php ?>
+                       <?php echo $sql ?>
+                   </ul>
+           </article>
+           <article>
+                <h3>Frameworks & librairies</h3>
+                <ul>
+                    <?php echo $sass ?>
+                    <?php echo $bootstrap ?>
+                    <?php echo $symphony ?>
+                    <?php echo $laravel ?>
+                </ul>
+            </article>
+            <article>
+                <h3>Logiciels</h3>
+                <ul>
+                    <?php echo $ps ?>
+                    <?php echo $ai ?>
+                    <?php echo $xd ?>
+                    <?php echo $figma ?>
+                </ul>
+            </article>
+            <article>
+                <h3>Langues</h3>
+                <ul>
+                    <?php echo $fr ?>
+                    <?php echo $ang ?>
+                    <?php echo $ara ?>
+                    <?php echo $bre ?>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

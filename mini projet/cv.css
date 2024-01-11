@@ -1,0 +1,39 @@
+body{
+    box-sizing:border-box;
+    font-size:62.5%;
+    font-family: 'Montserrat', sans-serif;    
+    margin: 0;
+    padding:0;
+    background-color: #fefefe; 
+}
+h1, h2, h3, h4{
+    margin:0;
+    padding:0;
+}
+
+header{
+    text-align:center;
+    color:#fefefe;
+    padding:2rem 0;
+}
+
+main{
+    display:flex;
+}
+
+section{
+    width:50%;
+    padding: 1rem 5rem;
+    border-left:1px solid grey;
+}
+
+
+.red{
+    background-color:#b50604;
+}
+.blue{
+    background-color:#24527c;
+}
+.grey{
+    background-color:#bababa
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <fieldset>
+            <h2>Informations</h2>
+            <label for="lastName">Nom</label>
+            <input type="text" name="lastName" id="lastName"/>
+            <label for="firstName">Prénom</label>
+            <input type="text" name="firstName" id="firstName"/>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email"/>
+            <label for="phone">Téléphone</label>
+            <input type="tel" name="phone" id="phone"/>
+            <label for="linkedin">Linkedin</label>
+            <input type="text" name="linkedin" id="linkedin"/>
+            <label for="github">GitHub</label>
+            <input type="text" name="github" id="github"/>
+            <label for="bio">Biographie</label>
+            <textarea id="bio" name="bio" rows="5" cols="33"></textarea>
+            <label for="loisir1">Loisir 1</label>
+            <input type="text" name="loisir1" id="loisir1"/>
+            <label for="loisir2">Loisir 2</label>
+            <input type="text" name="loisir2" id="loisir2"/>
+            <label for="loisir3">Loisir 3</label>
+            <input type="text" name="loisir3" id="loisir3"/>
+            <label for="loisir4">Loisir 4</label>
+            <input type="text" name="loisir4" id="loisir4"/>
+                        <h3>Langues</h3>
+            <label for="fr"><input type="checkbox" name="fr" id="fr"> Français</label>
+            <label for="ang"><input type="checkbox" name="ang" id="ang"> Anglais</label>
+            <label for="ara"><input type="checkbox" name="ara" id="ara"> Arabe</label>
+            <label for="bre"><input type="checkbox" name="bre" id="bre"> Breton</label>
+        </fieldset>
+        <fieldset>
+            <h2>Compétences</h2>
+            <h3>Langage de programmation</h3>
+            <label for="html"><input type="checkbox" name="html" id="html"> HTML</label>
+            <label for="css"><input type="checkbox" name="css" id="css"> CSS</label>
+            <label for="js"><input type="checkbox" name="js" id="js"> JavaScript</label>
+            <label for="php"><input type="checkbox" name="php" id="php"> PHP</label>
+            <label for="sql"><input type="checkbox" name="sql" id="sql"> SQL</label>
+            <h3>Frameworks & Librairies</h3>
+            <label for="sass"><input type="checkbox" name="sass" id="sass"> Sass</label>
+            <label for="bootstrap"><input type="checkbox" name="bootstrap" id="bootstrap"> Bootstrap</label>
+            <label for="symphony"><input type="checkbox" name="symphony" id="symphony"> Symphony</label>
+            <label for="laravel"><input type="checkbox" name="laravel" id="laravel"> Laravel</label>
+            <h3>Logiciels</h3>
+            <label for="ps"><input type="checkbox" name="ps" id="ps"> Photoshop</label>
+            <label for="ai"><input type="checkbox" name="ai" id="ai"> Illustrator</label>
+            <label for="xd"><input type="checkbox" name="xd" id="xd"> XD</label>
+            <label for="figma"><input type="checkbox" name="figma" id="figma"> Figma</label>
+            <h3>Couleur du CV</h3>
+            <label for="colors">Sélectionnez une couleur
+                <select name="colors" id="colors">
+                    <option value="blue">Bleu</option>
+                    <option value="red">Rouge</option>
+                    <option value="green">Gris</option>
+                </select>
+            </label>
+        </fieldset>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
